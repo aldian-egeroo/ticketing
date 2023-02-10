@@ -6,6 +6,7 @@ import {OrderCancelledListener} from "./events/listener/order-cancelled-listener
 
 
 const startApp = async () => {
+    console.log('starting ticket');
     if (!process.env.JWT_KEY){
         throw new Error('JWT_KEY must be set');
     }
